@@ -1,0 +1,133 @@
+{
+  "name": "Carseto",
+  "colors": {
+    "light": {
+      "brand": "#8c1d1c",
+      "heading": "undefined",
+      "text": "undefined"
+    },
+    "dark": {
+      "brand": "#DD706F",
+      "heading": "undefined",
+      "text": "undefined"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "star"
+              },
+              {
+                "title": "Quickstart",
+                "path": "quickstart",
+                "icon": "zap"
+              }
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "icon": "compass",
+            "pages": [
+              {
+                "title": "Features",
+                "path": "features",
+                "icon": "file-text"
+              },
+              {
+                "title": "Garage Management",
+                "path": "garage-management",
+                "icon": "folder"
+              }
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "icon": "alert-circle",
+            "pages": [
+              {
+                "title": "Troubleshooting",
+                "path": "troubleshooting",
+                "icon": "alert-circle"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "code",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "openapi": "api-reference/openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Help Center",
+        "icon": "help-circle",
+        "pages": [
+          {
+            "title": "Help Center",
+            "path": "help-center",
+            "icon": "home"
+          },
+          {
+            "group": "FAQs",
+            "icon": "help-circle",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Adding a Car",
+                "path": "help-center/faq/adding-a-car"
+              }
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "icon": "alert-triangle",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Images Not Uploading",
+                "path": "help-center/troubleshooting/images-not-uploading"
+              }
+            ]
+          },
+          {
+            "group": "Guides",
+            "icon": "book-open",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Create a Garage",
+                "path": "help-center/guides/create-a-garage"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  }
+}

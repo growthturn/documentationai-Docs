@@ -1,0 +1,127 @@
+---
+title: Troubleshooting Common Issues
+description: Resolve frequent problems encountered while using Carseto, from search errors to garage updates.
+---
+
+## Troubleshooting Overview
+
+Encounter issues with Carseto? This guide covers the most common problems and step-by-step fixes. Start with the basics like clearing your browser cache before diving into specific topics. Most issues resolve quickly without contacting support.
+
+<Callout kind="tip">
+  Always check your internet connection and try refreshing the page (`Ctrl+R` or `Cmd+R`) as a first step. Update your browser to the latest version for best compatibility.
+</Callout>
+
+## Account Login and Access Issues
+
+Login failures often stem from cached data, forgotten passwords, or session timeouts. Follow these steps to regain access.
+
+<Steps>
+  <Step title="Clear Browser Cache" icon="trash-2">
+    Clear cookies and cache specific to `carseto.com`.
+
+    - In Chrome: Settings > Privacy > Clear browsing data
+    - In Firefox: Options > Privacy > Cookies and Site Data > Manage Data > Search `carseto.com` > Remove All Shown
+
+    Restart your browser after clearing.
+  </Step>
+  <Step title="Reset Password" icon="key">
+    Go to [https://carseto.com/login](https://carseto.com/login) and click "Forgot Password?".
+
+    Enter your email. Check spam folder for the reset link (subject: "Reset Your Carseto Password").
+  </Step>
+  <Step title="Check Account Status" icon="shield">
+    Ensure your account is not suspended. Log in via incognito mode to test.
+  </Step>
+</Steps>
+
+<Callout kind="alert">
+  If two-factor authentication fails, verify your authenticator app time syncs with your device clock.
+</Callout>
+
+## Search and Listing Display Problems
+
+Searches for classics like "Porsche 911" or "Jaguar E-Type" not showing results? Display glitches affect filters or images.
+
+<Tabs>
+  <Tab title="Desktop Browsers" icon="monitor">
+    <Steps>
+      <Step title="Disable Extensions">
+        Temporarily disable ad blockers or VPN extensions, as they block marketplace data.
+      </Step>
+      <Step title="Check Console Errors">
+        Right-click > Inspect > Console tab. Look for network errors.
+
+````javascript
+// Example error to watch for:
+Failed to load resource: https://api.carseto.com/listings?query=porsche-911
+````
+
+        Report any `CORS` or `504` errors to support.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Mobile Apps/Browsers" icon="smartphone">
+    Force close the app or browser. Clear app cache via device settings.
+
+    Ensure location services are enabled for regional listings (12 countries supported).
+  </Tab>
+</Tabs>
+
+## Valuation Calculation Errors
+
+Valuations for your garage cars updating incorrectly? Common with new listings or data sync issues.
+
+<Expandable title="Advanced Valuation Troubleshooting" default-open="false">
+
+Valuations pull from 5 European marketplaces, updated monthly. Errors occur if:
+
+- Car details mismatch (e.g., "Mercedes-Benz 280 SL" vs "280SL")
+- Rare models lack data
+
+**Fix Steps:**
+
+1. Verify car specs: Year, mileage, condition in your garage.
+2. Refresh garage: [https://carseto.com/garage](https://carseto.com/garage) > Select car > Update Details.
+3. Wait 24 hours for recalculation.
+
+| Error Type | Cause | Solution |
+|------------|-------|----------|
+| "No Data" | Rare model | Add manual comps via "Document" tab |
+| "Stale Value" | Sync delay | Trigger manual refresh |
+| "Outdated" | Market change | Check `Last Updated` timestamp |
+
+</Expandable>
+
+<Columns cols={2}>
+  <Card title="Update Car Details" icon="edit-3" href="https://carseto.com/garage">
+    Edit mileage, photos, and history for accurate valuations.
+  </Card>
+  <Card title="View Market Comps" icon="bar-chart-3" href="https://carseto.com/valuations">
+    Compare with 45,887+ live listings.
+  </Card>
+</Columns>
+
+## Contact Support for Unresolved Issues
+
+Can't fix it yourself? Reach out with details like error messages, browser version, and screenshots.
+
+<ExpandableGroup>
+  <Expandable title="Submit a Ticket" default-open="true">
+    Use the in-app help: Click your profile > Support > New Ticket.
+
+    Include:
+    - Account email
+    - Steps to reproduce
+    - Browser/OS details
+  </Expandable>
+  <Expandable title="Live Chat Hours">
+    Available Mon-Fri, 9AM-6PM GMT. Response within 2 hours.
+  </Expandable>
+  <Expandable title="Community Forum">
+    Post on [https://forum.carseto.com](https://forum.carseto.com) for peer help.
+  </Expandable>
+</ExpandableGroup>
+
+<Callout kind="success">
+  95% of issues resolve via self-help. Great job troubleshooting your garage!
+</Callout>
